@@ -42,6 +42,7 @@ namespace Module06_TP01
         private void AfficherContent()
         {
             this.content.IsVisible = true;
+            this.loginForm.IsVisible = false;
         }
 
         private void AfficherErreur(string erreur)

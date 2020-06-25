@@ -5,7 +5,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="module05_TP01.MainPage">
+             x:Class="Module06_TP01.MainPage">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -29,7 +29,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                
+
                 <ImageButton Grid.Row="0" Grid.Column="0" 
                              Source="pencil" 
                              VerticalOptions="Fill" HorizontalOptions="Fill" 
@@ -43,24 +43,25 @@
                              Source="search"
                     VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent">
                 </ImageButton>
-                
+
             </Grid>
         </ContentView>
-        
-        <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
+
+        <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" x:Name="loginForm">
             <StackLayout>
                 <Label Text="Connexion à twitter" TextColor="Gray" HorizontalOptions="CenterAndExpand"></Label>
                 <Entry x:Name="email" Placeholder="Identifiant twitter" HorizontalOptions="FillAndExpand"/>
                 <Entry x:Name="password" Placeholder="Mot de passe" IsPassword="True" HorizontalOptions="FillAndExpand"/>
                 <StackLayout Orientation="Horizontal">
-                    <Switch/>
+                    <Switch x:Name="seSouvenir"/>
                     <Label Text="Mémoriser mes informations" TextColor="Gray" VerticalOptions="CenterAndExpand"/>
                 </StackLayout>
-                <Button Text="Se connecter" HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="errorMessage" TextColor="Red" HorizontalOptions="CenterAndExpand" IsVisible="false"></Label>
+                <Button Clicked="seConnecterClicked" Text="Se connecter" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
         </ContentView>
-        
-        <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+
+        <ContentView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" x:Name="content" IsVisible="false">
             <ScrollView HorizontalOptions="FillAndExpand">
                 <ContentView HorizontalOptions="FillAndExpand">
                     <Grid HorizontalOptions="FillAndExpand">

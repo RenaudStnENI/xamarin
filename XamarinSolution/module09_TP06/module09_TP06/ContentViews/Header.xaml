@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="module09_TP06.ContentViews.Header">
     <ContentView.Content>
-        <Grid Margin="10, 25">
+        <Grid Margin="25, 25">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -16,9 +16,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ImageButton Grid.Row="0" Grid.Column="0" Source="{utils:ImageFromResources module09_TP06.Images.pencil.png}" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent"></ImageButton>
+            <ImageButton Grid.Row="0" Grid.Column="0" Source="{utils:ImageFromResources module09_TP06.Images.pencil.png}"  VerticalOptions="Fill" HorizontalOptions="StartAndExpand" BackgroundColor="Transparent"></ImageButton>
             <Label Grid.Row="0" Grid.Column="1" TextColor="White" Text="Accueil" FontSize="20" FontAttributes="Bold" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"></Label>
-            <ImageButton Grid.Row="0" Grid.Column="2" Source="{utils:ImageFromResources module09_TP06.Images.search.png}" BackgroundColor="Transparent"></ImageButton>
+            <ImageButton Grid.Row="0" Grid.Column="2" Source="{utils:ImageFromResources module09_TP06.Images.search.png}" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" ></ImageButton>
         </Grid>
     </ContentView.Content>
 </ContentView>

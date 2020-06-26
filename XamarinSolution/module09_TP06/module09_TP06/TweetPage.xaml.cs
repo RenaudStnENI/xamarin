@@ -32,7 +32,7 @@ namespace module09_TP06
             if (e.Item == null)
                 return;
 
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+            await DisplayAlert("Tweet selectionné!", "Détail du tweet", "OK");
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;

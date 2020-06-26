@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:utils="clr-namespace:module09_TP06.Utils"
+             mc:Ignorable="d"
+             x:Class="module09_TP06.ContentViews.Header">
+    <ContentView.Content>
+        <Grid Margin="10, 25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ImageButton Grid.Row="0" Grid.Column="0" Source="{utils:ImageFromResources module09_TP06.Images.pencil.png}" VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent"></ImageButton>
+            <Label Grid.Row="0" Grid.Column="1" TextColor="White" Text="Accueil" FontSize="20" FontAttributes="Bold" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"></Label>
+            <ImageButton Grid.Row="0" Grid.Column="2" Source="{utils:ImageFromResources module09_TP06.Images.search.png}" BackgroundColor="Transparent"></ImageButton>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

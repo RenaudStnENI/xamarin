@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using module07_TP04.Entities;
 using module07_TP04.Services;
 using System.Diagnostics;
+using Xamarin.Essentials;
 
 namespace module07_TP04
 {
@@ -17,6 +18,8 @@ namespace module07_TP04
     public partial class MainPage : ContentPage
     {
         private ITwitterService twitterService;
+        NetworkAccess connection;
+
 
         public MainPage()
         {
@@ -31,17 +34,31 @@ namespace module07_TP04
         private void BtnConnectClicked(object sender, EventArgs e)
         {
             Debug.WriteLine("click");
+            connection = Connectivity.NetworkAccess;
 
             String email = this.email.Text;
             String password = this.mdp.Text;
             Boolean isRemind = this.memorise.IsToggled;
 
-            String erreurs = this.twitterService.Authenticate(new User() { Email = email, Password = password });
 
+            String erreurs;
+
+            if (this.connection == NetworkAccess.Internet)
+            {
+                erreurs = this.twitterService.Authenticate(new User() { Email = email, Password = password });
+                Debug.WriteLine("connection ok");
+            }
+            else
+            {
+                erreurs = "Pas de connection internet disponible";
+                Debug.WriteLine("Pas de connection");
+
+            }
             if (!String.IsNullOrEmpty(erreurs))
             {
                 this.errorMessage.Text = erreurs;
                 this.errorMessage.IsVisible = true;
+
             }
             else
             {

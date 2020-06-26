@@ -29,9 +29,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "module6_TP3", "module6_TP3"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "module07_TP04.Android", "module07_TP04\module07_TP04.Android\module07_TP04.Android.csproj", "{A8787069-E0C0-4A38-9A3B-5480DB4F7D5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "module07_TP04", "module07_TP04\module07_TP04\module07_TP04.csproj", "{CD076D58-DF08-4E58-B775-1F8D9F1D39EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "module07_TP04", "module07_TP04\module07_TP04\module07_TP04.csproj", "{CD076D58-DF08-4E58-B775-1F8D9F1D39EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "module7_TP4", "module7_TP4", "{32CEE2D3-C39E-4E4F-AF07-33C16D03D4C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "module9_TP06", "module9_TP06", "{CA22DB4D-78D3-4D2D-B777-D4B66C692B82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

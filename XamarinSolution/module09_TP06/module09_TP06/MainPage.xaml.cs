@@ -26,7 +26,6 @@ namespace module09_TP06
             InitializeComponent();
             this.btnConnect.Clicked += BtnConnectClicked;
             this.errorMessage.IsVisible = false;
-   
             this.connectionForm.IsVisible = true;
             this.twitterService = new TwitterServiceImpl();
         }

@@ -20,8 +20,8 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="75"/>
         </Grid.RowDefinitions>
+        
         <views:Header BackgroundColor="#58B0F0" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
-
 
         <ContentView x:Name="connectionForm" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
             <StackLayout>
@@ -37,48 +37,7 @@
             </StackLayout>
         </ContentView>
 
-        <ContentView x:Name="liste" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
-            <ScrollView HorizontalOptions="FillAndExpand">
-                <ContentView HorizontalOptions="FillAndExpand">
-                    <Grid HorizontalOptions="FillAndExpand">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="25"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <ContentView  HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
-                            <Grid  HorizontalOptions="FillAndExpand">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="25"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <Image Source="https://picsum.photos/50/50/?random.jpg" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"/>
-                                <Label Text="Renaud" Grid.Row="0" Grid.Column="1"></Label>
-                                <Label Text="@RenaudTweet" Grid.Row="0" Grid.Column="2"></Label>
-                                <Label Text="50s" TextColor="Gray" Grid.Row="0" Grid.Column="3"></Label>
-                                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis." Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"></Label>
-                            </Grid>
-                        </ContentView>
-                        <ImageButton Grid.Row="1" Grid.Column="0" Source="{utils:ImageFromResources module09_TP06.Images.reply.png}" BackgroundColor="Blue"></ImageButton>
-                        <ImageButton Grid.Row="1" Grid.Column="1" Source="{utils:ImageFromResources module09_TP06.Images.retweet.png}" BackgroundColor="Blue"></ImageButton>
-                        <ImageButton Grid.Row="1" Grid.Column="2" Source="{utils:ImageFromResources module09_TP06.Images.favorite.png}" BackgroundColor="Blue"></ImageButton>
-                    </Grid>
-                </ContentView>
-            </ScrollView>
-        </ContentView>
-        <views:Footer MinimumHeightRequest="75" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <views:Footer BackgroundColor="#58B0F0" MinimumHeightRequest="75" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
        
     </Grid>
 

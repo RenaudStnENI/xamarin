@@ -5,14 +5,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="module09_TP06.ContentViews.Footer">
-  <ContentView.Content>
-
-                <StackLayout Orientation="Horizontal" MinimumHeightRequest="75">
-            <Label TextColor="Gray" Text="Fil" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-            <Label TextColor="Gray" Text="Notification" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Fill"></Label>
-            <Label TextColor="Gray" Text="Messages" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Fill"></Label>
-            <Label TextColor="Gray" Text="Moi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Fill"></Label>
-                </StackLayout>
- 
-  </ContentView.Content>
+    <ContentView.Content>
+        <Grid Margin="10, 25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" TextColor="White" Text="Fil"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+            <Label Grid.Row="0" Grid.Column="1" TextColor="White" Text="Notification" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" ></Label>
+            <Label Grid.Row="0" Grid.Column="2" TextColor="White" Text="Messages" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+            <Label Grid.Row="0" Grid.Column="3" TextColor="White" Text="Moi" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+        </Grid>
+    </ContentView.Content>
 </ContentView>

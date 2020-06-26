@@ -67,7 +67,7 @@
                 </ListView.ItemTemplate>
 
             </ListView>
-            <views:Footer MinimumHeightRequest="60"/>
+            <views:Footer BackgroundColor="#58B0F0" MinimumHeightRequest="60"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
